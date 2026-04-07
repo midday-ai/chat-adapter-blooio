@@ -7,7 +7,7 @@ export interface BlooioAdapterConfig {
   baseUrl?: string;
   /**
    * Default sending number for multi-number accounts (E.164 format).
-   * Sent as `X-From-Number` header on outbound requests.
+   * Included as `from_number` in outbound message bodies.
    */
   defaultFromNumber?: string;
   /**
